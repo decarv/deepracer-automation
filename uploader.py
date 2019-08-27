@@ -94,7 +94,7 @@ class Uploader:
         count = 0
         for file in self.files_to_upload:
             file_name = file.split('/')[-1]
-            self.s3_bucket.upload_file(file, Key=os.path.join(self.s3_prefix, '/model', file_name))
+            self.s3_bucket.upload_file(file, Key=os.path.join(self.s3_prefix, 'model', file_name))
             logging.info(f'{file_name} uploaded to s3 bucket.')
             count += 1
         logging.warning(f'Model checkpoint {self.checkpoint} uploaded to s3 bucket.')
