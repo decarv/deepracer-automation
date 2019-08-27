@@ -15,6 +15,6 @@ s3_bucket_name = # s3 bucket into which are saved the model files
 s3_prefix = # s3 prefix that references to the model
 m_path = # absolute path to your bucket model
 bot = # ON or OFF
-bot_sleep = # True of False
+bot_sleep = # minutes that the bot waits until it loops
 backup_last_model = # True or False (set to False, not implemented yet)
 ```
