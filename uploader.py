@@ -40,7 +40,7 @@ class Uploader:
         logging.info(f'Bot is set to {config["bot"]}.')
         
         if self.bot:
-            self.bot()
+            self.load_bot()
         else:
             self.action()
 
@@ -52,7 +52,7 @@ class Uploader:
         except FileNotFoundError:
             logging.warning('Please create a config.ini file in the same directory as the uploader.')
 
-    def bot(self):
+    def load_bot(self):
         while True:
             logging.info(f'Bot next action in {self.bot_sleep/60} minutes.')
             time.sleep(self.bot_sleep)
