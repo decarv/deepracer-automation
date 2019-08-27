@@ -2,7 +2,7 @@
 Personal repository for scripts that automate deepracer common tasks for when deepracer is ran locally. For more information, refer to https://github.com/crr0004/deepracer.
 
 ## Uploader
-This script uploads the last submitted model from your s3 bucket object and uploads most recent model to bucket.
+This script uploads the last submitted model from your s3 bucket object and uploads most recent model to bucket. You can also program it to work automatically by setting `bot` in config.ini to `ON`. 
 
 ## Configuration
 
